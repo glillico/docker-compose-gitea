@@ -1,6 +1,6 @@
 # gitea
 
-A docker-compose file for my gitea environment.
+A docker compose file for my gitea environment.
 
 ## Usage 
 
@@ -8,8 +8,8 @@ A docker-compose file for my gitea environment.
 
 ```bash
 cd ~/gitea            # change to the gitea directory
-docker-compose pull   # pulls the latest images
-docker-compose up -d  # starts containers 
+docker compose pull   # pulls the latest images
+docker compose up -d  # starts containers 
 ```
 
 Once up and running, using a web browser got to http://dockerhost:3000 and complete the installation.
@@ -17,15 +17,15 @@ Once up and running, using a web browser got to http://dockerhost:3000 and compl
 ### Stopping
 
 ```bash
-docker-compose down  # stops the container
+docker compose down  # stops the container
 ```
 
 ### Updating
 
 ```bash
 cd ~/gitea                      # change to the gitea directory
-docker-compose pull             # pulls the latest images
-docker-compose up -d --no-deps  # restarts the containers with the newer images
+docker compose pull             # pulls the latest images
+docker compose up -d --no-deps  # restarts the containers with the newer images
 docker system prune -a          # deletes any unused images
 ```
 
@@ -33,7 +33,7 @@ docker system prune -a          # deletes any unused images
 
 ```bash
 cd ~/gitea              # change to the gitea directory
-docker-compose down -v  # stops the containers and deletes the data volumes
+docker compose down -v  # stops the containers and deletes the data volumes
 docker system prune -a  # deletes any unused container images
 ```
 
