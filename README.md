@@ -1,4 +1,4 @@
-# gitea
+# docker-compose-gitea
 
 A docker compose file for my gitea environment.
 
